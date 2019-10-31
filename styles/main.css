@@ -1,0 +1,370 @@
+/*COPYRIGHT CHARLES CHEGE*/
+/*charleschege@protonmail.ch*/
+/*Use, copying, editing and restructuring of this document without permission is prohibited and is subject to copyright by the author*/
+
+
+body {
+	background: #fffff9;
+	font-family: sans-serif;
+	color: #212121;
+}
+.form-width {
+    width: 100%;
+}
+.bg-light-grey {
+    background: #f9f9f9;
+}
+.body-color {
+    background: #212121;
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+.copyright {
+    background: #191919;
+}
+.footer img {
+    width: 55%;
+}
+.badges img {
+    width: 50%;
+}
+.bg-grey {
+    background: #f8f4f4e7;
+    border-radius: 10px;
+}
+.bg-mobile-menu{
+    background: #fdaa8f;
+    color: #20064c;
+}
+.bottom-border-purple {
+    border-bottom: 1px solid #20064c;
+}
+.logo img{
+    width: 80%;
+}
+.full-width {
+    width: 100%;
+}
+.full-height {
+    min-height: 100%;
+    min-height: 100vh;
+}
+select {
+    border: 1px solid #999999;
+    border-radius: 5px;
+    color: #555555;
+}
+label {
+    color: #222222;
+}
+input {
+    border: 1px solid #999999;
+    border-radius: 5px;
+    color: #555555;
+}
+textarea{
+    border: 1px solid #999999;
+    border-radius: 5px;
+    color: #555555;
+}
+.half-height {
+    height: 50%;
+    height: 50vh;
+}
+.data-chart img {
+	width: 50%;
+}
+.bg-brown {
+	background: #fdaa8f;
+}
+.nav-md {
+    height: 3em;
+}
+nav a {
+    color: #FFFFFF;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0a44e2;
+}
+
+nav a:visited{
+    color: #FFFFFF;
+}
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0,0,0,0.4) 30%),  url("../images/notebook.jpg") no-repeat;
+    background-size: cover;
+}
+.main-btn {
+	color: #FFFFFF;
+    background: #1c5e20;
+	padding: .6em 1.6em;
+	text-transform: uppercase;
+	border: 0;
+	border-radius: 0%;
+	box-shadow: 0 0 3px #444444;
+}
+.fa-bars {
+    color: #FFFFFF;
+}
+.shadow {
+    border-radius: 0%;
+    box-shadow: 0 0 10px #000;
+}
+
+.main-btn:hover {
+	color: #FFFFFF;
+	background: #1c5e20;
+}
+.icon-only i{
+    font-size: 200%;
+}
+img {
+    max-width: 100% !important;
+}
+.gradient-text {
+    color: #20064c;
+   
+}
+.sub-section h4 {
+    color: #1c5e20;
+    background: -webkit-linear-gradient(90deg, rgb(42, 157, 214), rgb(52, 147, 215), rgb(65, 135, 214), rgb(114, 79, 205), rgba(121, 71, 207));
+    background: linear-gradient(90deg, rgb(42, 157, 214), rgb(52, 147, 215), rgb(65, 135, 214), rgb(114, 79, 205), rgba(121, 71, 207));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 160% !important;
+}
+.border-light {
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+}
+.bg-border {
+    border: 1px solid #000000;
+    min-height: 5em;
+    margin: 0.5em 0;
+}
+.test-bg-dark {
+    background: #000000;
+    color: #ffa200
+}
+.bg-dark {
+    background: #212121;
+    color: #FFFFFF;
+}
+.bg-dark a{
+    color: #FFFFFF;
+    text-decoration: none;
+}.bg-dark a:hover{
+    color: #ffa200;
+    text-decoration: none;
+}
+.header-lg {
+    font-weight: 100 !important;
+	font-size: 2em !important;
+    color: rgb(21, 124, 21) !important;
+}
+.uppercase {
+    text-transform: uppercase !important;
+}
+.small-text-important {
+    font-size: 1em;
+    color: #1c5e20;
+
+}
+.color-bar {
+    background: #fdaa8f;
+}
+.header-kalam {
+    font-weight: bold;
+    color: #1c5e20
+}
+.font-size-one-fifty {
+    font-size: 150%;
+}
+.hero-p {
+    font-size: 120% !important;
+    font-weight: 400 !important;
+    color: #FFFFFF;
+}
+img {
+    max-width: 100% !important;
+}
+.sub-section h4 {
+    font-size: 130%;
+    color: linear-gradient(90deg, rgb(42, 157, 214), rgb(52, 147, 215), rgb(65, 135, 214), rgb(114, 79, 205), rgba(121, 71, 207));
+}
+.rating-img img {
+    width: 80%;
+}
+.bg-primary-color {
+     background: #20064c;
+    color: #FFFFFF
+}
+.bg-primary-gradient-color {
+    background: linear-gradient(90deg, rgb(42, 157, 214), rgb(52, 147, 215), rgb(65, 135, 214), rgb(114, 79, 205), rgba(121, 71, 207));
+    color: #FFFFFF
+}
+.custom-cols i {
+    font-size: 2em;
+    color: #20064c;
+}
+.custom-cols p {
+    font-weight: 100;
+    font-family: sans-serif;
+}
+.circle-number {
+    border: 3px solid #1c5e20;
+    border-radius: 50%;
+}
+.medium-section {
+	min-height: 40em;
+}
+.hero h4 {
+	font-size: 300%;	
+}
+.steps h2 {
+    
+    font-size: 180%;
+}
+.steps span {
+    
+    padding: 1px 8px;
+}
+.steps p {
+    font-size: 120%;
+}
+.workforce h3 {
+    
+    font-size: 180%;
+}
+.data-chart h2 {
+    
+    font-size: 180%;
+}
+.bg-white {
+    background: #FFFFFF;
+    color: #222222;
+}
+.form-shadow {
+    box-shadow: 0 0  5px #000000;
+}
+
+.custom-form h1 {
+    color: #2f2f2f;
+    
+}
+.contacts a{
+    color: #1c5e20;
+    text-decoration: none;
+}
+.contacts a:hover{
+    color:  rgb(28, 187, 187);
+}
+.contacts a:visited{
+    color: rgb(28, 187, 187);
+}
+.none {
+    display: none;
+}
+.testimonial i{
+    color: #ffa200;
+}
+.maxby30 {
+    font-size: 130% !important;
+}
+.maxby90 {
+    font-size: 190% !important;
+}
+.color-brown {
+    color: #fdaa8f;
+}
+#min-amount input {
+    border: 0;
+    padding: 0;
+    margin-left: .5em;
+    border-radius: 5px;
+    color: rgb(11, 87, 11);
+    font-size: 120% !important;
+}
+/* XS */
+@media (max-width: 767px) {
+
+    .sub-section h4 {
+        font-size: 100%;
+    }
+    .data-chart img {
+        width: 100% !important;
+    }
+    .rating-img img {
+        width: 200%;
+    }
+    .hero-p {
+        font-size: 100% !important;
+    }
+}
+
+/* XS, SM */
+@media (max-width: 991px) {
+    p {
+        font-size: 130%;
+    }
+    .hero-header-lg {
+        font-size: 200%;
+    }
+    .sub-section h4 {
+        font-size: 100% !important;
+    }
+}
+
+/* SM */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* MD */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* LG */
+@media (min-width: 1200px) {
+  
+}
+
+/* MD, LG */
+@media (min-width: 992px) {
+
+    .header-lg {
+        font-weight: 100 !important;
+        font-size: 3em !important;
+    }
+    
+    .form-width {
+        width: 60%;
+    }
+
+    .mr-md-lg {
+        margin-right: 20px;
+    }
+}
+
+/* SM, MD, LG*/
+@media (min-width: 768px) {
+    .half-width {
+        width: 50%;
+    }
+    .three-quarters {
+        width: 75%;
+    }
+    .logo img{
+        width: 30%;
+    }
+    .small-text-important {
+        font-size: 2em;
+    }
+}

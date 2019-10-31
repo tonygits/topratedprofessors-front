@@ -1,0 +1,540 @@
+<!--COPYRIGHT CHARLES CHEGE-->
+<!--charleschege@protonmail.ch-->
+<!--Use, copying, editing and restructuring of this document without permission is prohibited and is subject to copyright by the author-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/frow.min.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>TopRatedProfessors - Buy Your Paper Online from Experts In Your Field Of Study</title>
+</head>
+<body>
+    <section class="frow full-height hero">
+       <div class="frow full-width direction-column justify-start">
+           <nav class="color-bar nav-md frow justify-around row-start hidden-sm hidden-xs">
+               <div class="frow col-md-1-5 col-lg-1-5"><img src="images/logo.svg" alt=""></div>
+               <div class="frow col-md-1-5 col-lg-1-5"><a href="/index.html">HOME</a></div>
+               <div class="frow col-md-1-5 col-lg-1-5"><a href="/login.html">LOGIN</a></div>
+               <div class="frow col-md-1-5 col-lg-1-5"><a href="/signup.html">SIGNUP</a></div>
+               <div class="frow col-md-1-5 col-lg-1-5"><a href="/contact-us.html">CONTACT US</a></div>
+           </nav>
+           <nav class="color-bar frow justify-between row-end hidden-md hidden-lg">
+               <div class="frow col-xs-1-2 col-sm-1-2 p-5"><img src="images/logo.svg" alt=""></div>
+               <div onclick="toggleMobileMenu()" class="frow items-end row-end pr-5 col-xs-1-2 col-sm-1-2"><i class="fa fa-bars"></i></div>
+               <div id="mobile-menu" class="frow half-height direction-column justify-start full-width none bg-mobile-menu">
+                    <div class="frow p-10 bottom-border-purple full-width"><a href="/index.html">HOME</a></div>
+                   <div class="frow p-10 bottom-border-purple full-width"><a href="/login.html">LOGIN</a></div>
+                   <div class="frow p-10 bottom-border-purple full-width"><a href="/signup.html">SIGNUP</a></div>
+                   <div class="frow p-10 bottom-border-purple full-width"><a href="/contact-us.html">CONTACT US</a></div>
+               </div>
+           </nav>
+       </div>
+        <div class="p-10 mr-md-lg full-width justify-start frow direction-column">
+            <div class="frow m-0">
+                <div class="frow hero-p direction-column items-center p-20 col-md-1-2">
+                    <div class="frow full-width">
+                        <h2 class="color-brown">Hire Experts to Do Your Assignment for You</h2>
+                    </div>
+                    <div class="frow full-width mt-50 mb-25">
+                        <div class="col-xs-1-2">
+                            <h5><i class="fa fa-check-circle mr-5"></i> A+ Quality Paper</h5>
+                        </div>
+                        <div class="col-xs-1-2">
+                            <h5><i class="fa fa-check-circle mr-5"></i> 100% Written from Scratch</h5>
+                        </div>
+                    </div>
+                    <div class="frow full-width">
+                        <div class="col-xs-1-2">
+                            <h5><i class="fa fa-check-circle mr-5"></i> On Time Delivery</h5>
+                        </div>
+                        <div class="col-xs-1-2">
+                            <h5><i class="fa fa-check-circle mr-5"></i> Unlimited Free Revisions</h5>
+                        </div>
+                    </div>
+                    <div class="frow full-width mt-50">
+                        <h5><i class="fa fa-money-check-alt mr-5"></i>We are the best custom essay writers online.</h5>
+                    </div>
+                    <div class="frow full-width direction-column row-center mt-50">
+                        <h5 class="color-brown">
+                            <i class="maxby90 fa fa-star"></i>
+                            <i class="maxby90 fa fa-star"></i>
+                            <i class="maxby90 fa fa-star"></i>
+                            <i class="maxby90 fa fa-star"></i>
+                            <i class="maxby90 fa fa-star"></i>
+                    </h5>
+                        <h5 class="color-brown maxby30 mt-20 text-center">100% SATISFACTION GUARANTEED</h5>                        
+                    </div>
+                </div>
+                <div id="scroll-form" class="frow col-md-1-2 items-center direction-column">
+                    <div class="frow justify-end">
+                            <form class="frow form-width items-center p-5 bg-grey" action="/api/order-details" method="post">
+                                <div class="frow full-width mt-25">
+                                    <h2 class="header-kalam">Calculate Your Price</h2>
+                                </div>
+                                <div class="frow full-width p-10">
+                                        <label for="service" class="col-md-1-3 m-0 p-5 justify-center full-width">Service</label>
+                                        <select class="col-md-2-3" name="service" id="service" required></select>
+                                </div>
+                                <div class="frow full-width p-10">
+                                        <label for="type" class="col-md-1-3 m-0 p-5 justify-center full-width">Type</label>
+                                        <select class="col-md-2-3" name="type" id="types" required></select>
+                                </div>
+                                <div class="frow full-width p-10">
+                                        <label for="urgency" class="col-md-1-3 m-0 p-5 justify-center full-width">Urgency</label>
+                                        <select class="col-md-2-3" name="urgency" id="urgency" required></select>
+                                </div>
+                                <div class="frow full-width p-10">
+                                        <label for="pages" class="col-md-1-3 m-0 p-5 justify-center full-width">Pages</label>
+                                        <select class="col-md-2-3" name="pages" id="pages" required></select>
+                                </div>
+                                <div class="frow full-width p-10">
+                                        <label for="level" class="col-md-1-3 m-0 p-5 justify-center full-width">Level</label>
+                                        <select class="col-md-2-3" name="level" id="level" required></select>
+                                </div>
+                                <div class="frow mb-20 mt-10 p-10 full-width">
+                                    <label for="order_price" class="frow col-xs-1-2 col-sm-1-3 col-md-1-3 m-0">Amount:</label>
+                                    <span class="col-xs-1-2 col-sm-2-3 col-md-2-3" id="min-amount"></span>
+                                </div>
+                                <div class="frow  items-center mb-20">
+                                    <button type="submit" class="main-btn">PLACE ORDER</button>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <section class="frow mt-50 items-center workforce p-5">
+        <div class="frow row-center direction-column full-width p-5">
+            <h3>Your Assignment Assistance</h3>
+            <p class="p-10">Visit our website to fill up your order form, indicating the service you need, the
+                number of pages, and the exact time you need it. Give as detailed instructions as
+                possible.</p>
+        </div>
+        <div class="frow p-0">
+            <div class="frow row-start direction-column col-md-1-5 items-center p-10 m-5 custom-cols border-light">
+                <i class="fa fa-award mb-10"></i>
+                <h4 class="header-kalam">What Kind Of Help Do You Need?</h4>
+                <p>Visit our website to fill up your order form, indicating the service you need, the
+                    number of pages, and the exact time you need it. Give as detailed instructions as
+                    possible.</p>
+            </div>
+            <div class="frow row-start direction-column col-md-1-5 items-center p-10 m-5 custom-cols border-light">
+                <i class="fa fa-money-bill-alt mb-10"></i>
+                <h4 class="header-kalam">Reserve Funds for Your Order</h4>
+                <p>After filling your order form and placing your order, you get the total order price at
+                    the bottom of the order form. You can decide to add funds to your wallet or reserve
+                    the funds directly from PayPal.
+                    We will assign your order to the best writer in your field, and he/she will start
+                    working on your paper immediately.</p>
+            </div>
+            <div class="frow row-start direction-column items-center col-md-1-5 p-10 m-5 custom-cols border-light">
+                <i class="fa fa-edit mb-10"></i>
+                <h4 class="header-kalam">Receive Your Completed Work.</h4>
+                <p>After filling your order form and placing your order, you get the total order price at
+                    the bottom of the order form. You can decide to add funds to your wallet or reserve
+                    the funds directly from PayPal.
+                    We will assign your order to the best writer in your field, and he/she will start
+                    working on your paper immediately.</p>
+            </div>
+            <div class="frow row-start direction-column items-center col-md-1-5 p-10 m-5 custom-cols border-light">
+                <i class="fa fa-coins mb-10"></i>
+                <h4 class="header-kalam">Pay Your Writer</h4>
+                <p>After downloading and reading through the work, you decide if it meets your
+                    requirements or not. If it doesn’t, you can ask for a revision (free). If the work is as
+                    great as promised, you pay your writer by releasing the funds to him. You can also
+                    leave him a review.</p>
+            </div>
+        </div>
+    </section>
+    <section class="frow mt-50 items-center bg-light-grey p-5">
+        <div class="frow row-center direction-column full-width m-5 p-10">
+            <h2 class="header-kalam">Homework Help Services</h2>
+        </div>
+        <div class="frow justify-around p-10">
+            <div class="frow row-start direction-column col-md-1-4 items-center p-20 custom-cols">
+                <i class="fa fa-desktop mb-10"></i>
+                <h3 class="header-kalam">Online Assignment Help</h3>
+                <p>Do you need urgent help with your assignment? Topratedprofessors.com is your
+                    best help with all the solutions you need. We have the best essay writers from USA,
+                    CANADA, UK, and Australia. Our writers are professors in various fields, which
+                    guarantees you the best grades when they do your assignment for you. We also
+                    have master’s level writers, college/university level writers as well as High school
+                    level writers.</p>
+            </div>
+            <div class="frow row-start direction-column items-center col-md-1-4 p-20 custom-cols">
+                <i class="fa fa-edit mb-10"></i>
+                <h3 class="header-kalam">Essay Writing Help for Students</h3>
+                <p>We will help you achieve your academic goals by customizing your essay according
+                    to your instructions. We have expert writers ready to take on any task given to
+                    them by students who have little or no time to handle their assignments. Our
+                    writers write their essays from scratch. Therefore, the essays are plagiarism-free,
+                    and the quality always guarantees good grades. Get all your assignments delivered
+                    to you before your deadline.</p>
+            </div>
+            <div class="frow row-start direction-column items-center col-md-1-4 p-20 custom-cols">
+                <i class="fa fa-file mb-10"></i>
+                <h3 class="header-kalam">Best Dissertation Writing Online</h3>
+                <p>We are a team of professors. We know exactly what you need in your dissertation,
+                    and we deliver exactly that. We do thorough research utilizing both primary and
+                    secondary scholarly articles to come up with the best dissertation for you. Never
+                    hesitate to request help with your dissertation if you are stuck at any point as you
+                    write it.</p>
+            </div>
+            <div class="frow row-start direction-column items-center col-md-1-4 p-20 custom-cols">
+                <i class="fa fa-file mb-10"></i>
+                <h3 class="header-kalam">Online Academic Writing Services</h3>
+                <p>At topratedprofessors.com, we have experts in various fields and subjects. If you
+                    are stuck with your essay, research paper, dissertation, lab report, math problem,
+                    book/movie critique, or any other assignment, just come to us. We do all kinds of
+                    assignments your professor can bring. You will never have to fail an assignment
+                    again once you get a taste of our writing service. Always guaranteeing our students
+                    the grades they want.</p>
+            </div>
+        </div>
+    </section>
+    <section class="p-20 data-chart">
+        <div class="direction-column justify-center frow">
+            <div class="frow uppercase">
+                <div class="frow col-md-1-4 m-5 direction-column items-center">
+                    <h2 class="header-kalam header-lg numbers-with-commas">153</h2>
+                    <p>Professors online</p>
+                </div>
+                <div class="frow col-md-1-4 m-5 direction-column items-center">
+                    <h2 class="header-kalam header-lg numbers-with-commas">120515</h2>
+                    <p>customers</p>
+                </div>
+                <div class="frow col-md-1-4 m-5 direction-column items-center">
+                    <h2 class="header-kalam header-lg"><span class="numbers-with-commas">4.9</span>/5.0</h2>
+                    <p>Star Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+            <div class="frow p-10 row-center direction-column">
+                    <h3 class="header-kalam font-size-one-fifty">Why TopRatedProfessors?</h3>
+                    <div class="frow col-md-8-10 p-20">
+                            <p>
+                                    Students go through a lot of challenges. Imagine having five assignments, all due
+                                    tonight. I bet you would break down as you figure out a way of handling all of them.
+                                    We understand the challenges students face and, as such always seek to help
+                                    whenever we can. Sometimes the fear of failing makes you not sure of what you
+                                    are writing. Our experts take away that fear and handle the assignments for you.
+                                    The final product is always topnotch and ready for submission. You only need to add
+                                    your student details, and you are done. Did you have fun the whole weekend and
+                                    forgot that you had an assignment due on Monday? Don’t panic. As soon as you
+                                    remember you have an assignment, come to us place your order and relax. Our
+                                    experts are experienced in working even under the tightest deadlines. We always
+                                    have a solution for you.
+                            </p>
+                            <p>The experience within our team guarantees you of quality work, 100% original and
+                                    on-time delivery. You would have no reason to panic if you hire a professor to do
+                                    your homework. We boast of helping over 100,000 students from across the globe
+                                    because they trust us with their assignments and we never fail to deliver.</p>
+                    </div>
+            </div>
+        <div class="frow bg-light-grey">
+            <div class="frow full-width mt-25">
+                <h3>Features of Our Assignment Help</h3>
+            </div>
+            <div class="frow direction-column items-center justify-start col-md-1-4 m-5 p-20 custom-cols">
+                <i class="fa fa-clock mb-10"></i>
+               <h4 class="header-kalam">On-Time Delivery</h4>
+               <p>Time if a crucial aspect of anyone’s life. As such, we never compromise when it
+                    comes to the deadline. Our writers adhere to the given deadline and make sure
+                    they deliver the work on time to allow the student enough time to review the work.</p>
+           </div>
+           <div class="frow direction-column items-center justify-start col-md-1-4 m-5 p-20 custom-cols">
+            <i class="fa fa-phone mb-10"></i>
+               <h4 class="header-kalam">24/7 Customer Support</h4>
+               <p>Our world-class customer support team is always available at all times to respond
+                    to your queries. If you are ever stuck at any stage during the order process, you
+                    can always text us through the chatbox and we respond within the shortest time
+                    possible.</p>
+           </div>
+           <div class="frow direction-column items-center justify-start col-md-1-4 m-5 p-20 custom-cols">
+            <i class="fa fa-file-signature mb-10"></i>
+               <h4 class="header-kalam">Plagiarism Free Work</h4>
+               <p>Our writers always write their work from scratch and always reference any materials
+                    they use to do their research. We also have sophisticated software which helps us
+                    to check all our papers for any plagiarism before submitting to the customer. You
+                    can always trust that the work you receive is 100% original and written from
+                    scratch. We also provide our customers with free plagiarism reports whenever they
+                    request them.</p>
+           </div>
+        </div>
+        <div class="frow bg-light-grey">
+                <div class="frow direction-column items-center justify-start col-md-1-4 m-5 p-20 custom-cols">
+                    <i class="fa fa-user-graduate mb-10"></i>
+                   <h4 class="header-kalam">Top Quality Work</h4>
+                   <p>We always deliver the best to the customer. You come to us for help because you
+                        trust that we will make your grade. We never disappoint you. Our quality is
+                        topnotch. Try us.</p>
+               </div>
+               <div class="frow direction-column items-center justify-start col-md-1-4 m-5 p-20 custom-cols">
+                <i class="fa fa-handshake mb-10"></i>
+                   <h4 class="header-kalam">100% Money-Back Guarantee.</h4>
+                   <p>You can always get 100% of your money back if you do not get the service you
+                        wanted. We build trust between the customer and us by making sure we refund our
+                        customers whenever the writer fails to deliver.</p>
+               </div>
+               <div class="frow direction-column items-center justify-start col-md-1-4 m-5 p-20 custom-cols">
+                <i class="fa fa-mail-bulk mb-10"></i>
+                   <h4 class="header-kalam">Email and SMS Updates</h4>
+                   <p>We always inform you about the progress of your order right from the start to
+                        completion through emails and SMS whenever you provide your contact. You can
+                        never miss any important notification.</p>
+               </div>
+        </div>
+        <div class="frow bg-light-grey">
+            <div class="frow direction-column row-start col-md-1-4 m-5 p-20 custom-cols">
+                <i class="fa fa-user-secret mb-10"></i>
+                <h4 class="header-kalam">100% Confidentiality</h4>
+                <p>We value your privacy and as such, protect your identity. We guarantee 100%
+                        anonymity whenever you visit our website.</p>
+            </div>
+            <div class="frow direction-column row-start col-md-1-4 m-5 p-20 custom-cols">
+                <i class="fa fa-balance-scale mb-10"></i>
+                <h4 class="header-kalam">Unlimited free revisions</h4>
+                <p>Don’t like what you get? Ask for free revisions until you are 100% satisfied with the
+                        work.</p>
+            </div>
+            <div class="frow direction-column row-start col-md-1-4 m-5 p-20 custom-cols">
+                <i class="fa fa-users mb-10"></i>
+                <h4 class="header-kalam">500+ writers</h4>
+                <p>We have over 500 writers experienced in different fields and subjects. Out of the
+                        500+, 153 are professors, and as such, you can always trust that they will deliver
+                        what you need. You do not have to be scared whenever a professor is handling
+                        your assignment.</p>
+            </div>
+        </div>
+    </section>
+    <section class="mb-10 mb-20 badges frow">
+        <div class="frow col-xs-1-2 direction-column row-center col-sm-1-2 col-md-1-3">
+            <img src="images/Satisfaction.png" alt="">
+        </div>
+        <div class="frow col-xs-1-2 direction-column row-center col-sm-1-2 col-md-1-3">
+            <img src="images/moneyback.png" alt="">
+        </div>
+    </section>
+    <section class=" mt-20">
+            <div class="frow p-10 row-center direction-column">
+                    <h3 class="header-kalam font-size-one-fifty">Customer Testimonials</h3>
+                    
+            </div>
+        <div class="frow testimonial">
+            <div class="frow direction-column items-center justify-start col-md-1-4 border-light m-5 p-20 custom-cols">
+                <h4><i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i></h4>
+                <p>“I was desperate to complete an eleven-page paper within 24 hours. I could not do
+                        it with all the work I have to do at home with the kids and job. Thank you so much,
+                        TopRatedProfessors.com, for coming to my help. I cannot thank you enough”</p>
+                <p> - Ashley, USA</p>
+           </div>
+           <div class="frow direction-column items-center justify-start col-md-1-4 border-light m-5 p-20 custom-cols">
+               <h4><i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i></h4>
+               <p>“I have always had my assignments done by Professor Jay, and so far, he has been
+                    amazing. He’s always quick to respond to my queries and follows my instructions. I
+                    would recommend Professor Jay to any student stuck with any assignment. Great
+                    website, God bless you for saving us so much headache.”</p>
+               <p> - Chris, UK</p>
+          </div>
+          <div class="frow direction-column items-center justify-start col-md-1-4 border-light m-5 p-20 custom-cols">
+              <h4><i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i></h4>
+              <p>“Oh, my God! You guys are amazing! I can’t believe I received a 97% on my
+                    computer science assignment. Thanks so much. I am excited. I highly recommend
+                    you guys. Thank you”</p>
+              <p> - Burr, Canada</p>
+         </div>
+        </div>
+    </section><section class="bg-dark full-width footer">
+        <div class="frow p-10 mt-25">
+            <div class="frow col-xs-1-2 col-sm-1-2 col-md-1-4"><a href="faqs.html">FAQs</a></div>
+            <div class="frow col-xs-1-2 col-sm-1-2 col-md-1-4"><a href="moneyback.html">Moneyback Guarantee</a></div>
+            <div class="frow col-xs-1-2 col-sm-1-2 col-md-1-4"><a href="services.html">Our Services</a></div>
+            <div class="frow col-xs-1-2 col-sm-1-2 col-md-1-4"></div>
+        </div>
+        <div class="frow items-center p-10">
+                <div class="frow col-xs-1-2 col-sm-1-2 col-md-1-4"><a href="tos.html">Terms of Service</a></div>
+                <div class="frow col-xs-1-2 col-sm-1-2 col-md-1-4"><a href="pp.html">Privacy policy</a></div>
+                <div class="frow col-md-1-4"><a href="#">info@topratedprofessors.com</a></div>
+                <div class="frow col-md-1-4"><img src="images/payments.png" alt=""></div>
+            </div>
+        <div class="copyright">
+            <div class="frow items-center p-10">
+                &copy;2019 TopRatedProfessors
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/main.js"></script>
+        <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5a9ae4dfd7591465c7083800/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <script>
+            var request = new XMLHttpRequest();
+            request.open("GET", "https://doctorateessays.com/api/calculator-details", true);
+        
+            request.onload = function () {
+                if (this.status >= 200 && this.status < 400) {
+                    var data = JSON.parse(this.response);
+                    
+                    let services = data.services;
+                    let types = data.types;
+                    let urgencies = data.urgencies;
+                    let pages = data.pages;
+                    let levels = data.levels;
+                    let subjects = data.subjects;
+                    /*let spacing = data.spacing;
+                    let languages = data.languages;
+                    let styles = data.styles;
+                    let sources = data.sources;*/
+                    
+                    services.forEach(service => {
+                        let node = document.createElement("option");
+                        let textnode = document.createTextNode(service.name);
+                        let attr = document.createAttribute("value");
+                        attr.value = service.id;
+                        node.setAttributeNode(attr);
+                        node.appendChild(textnode);
+                        document.getElementById("service").appendChild(node);
+                    });
+        
+                    types.forEach(type => {
+                        let node = document.createElement("option");
+                        let textnode = document.createTextNode(type.name);
+                        let attr = document.createAttribute("value");
+                        attr.value = type.id;
+                        node.setAttributeNode(attr);
+                        node.appendChild(textnode);
+                        document.getElementById("types").appendChild(node);
+                    });
+        
+                    urgencies.forEach(urgency => {
+                        let node = document.createElement("option");
+                        let textnode = document.createTextNode(urgency.name);
+                        let attr = document.createAttribute("value");
+                        attr.value = urgency.id;
+                        node.setAttributeNode(attr);
+                        node.appendChild(textnode);
+                        document.getElementById("urgency").appendChild(node);
+                    });
+        
+                    pages.forEach(page => {
+                        let node = document.createElement("option");
+                        let textnode = document.createTextNode(page.name);
+                        let attr = document.createAttribute("value");
+                        attr.value = page.id;
+                        node.setAttributeNode(attr);
+                        node.appendChild(textnode);
+                        document.getElementById("pages").appendChild(node);
+                    });
+        
+                    levels.forEach(level => {
+                        let node = document.createElement("option");
+                        let textnode = document.createTextNode(level.name);
+                        let attr = document.createAttribute("value");
+                        attr.value = level.id;
+                        node.setAttributeNode(attr);
+                        node.appendChild(textnode);
+                        document.getElementById("level").appendChild(node);
+                    });
+        /*
+                    spacing.forEach(space => {
+                        let node = document.createElement("option");
+                        let textnode = document.createTextNode(space.name);
+                        let attr = document.createAttribute("value");
+                        attr.value = space.id;
+                        node.setAttributeNode(attr);
+                        node.appendChild(textnode);
+                        document.getElementById("spacing").appendChild(node);
+                    });*/
+        
+                    /*languages.forEach(language => {
+                        let node = document.createElement("option");
+                        let textnode = document.createTextNode(language.name);
+                        let attr = document.createAttribute("value");
+                        attr.value = language.id;
+                        node.setAttributeNode(attr);
+                        node.appendChild(textnode);
+                        document.getElementById("languages").appendChild(node);
+                    });*/
+        
+                    /*subjects.forEach(subject => {
+                        let node = document.createElement("option");
+                        let textnode = document.createTextNode(subject.name);
+                        let attr = document.createAttribute("value");
+                        attr.value = subject.id;
+                        node.setAttributeNode(attr);
+                        node.appendChild(textnode);
+                        document.getElementById("subjects").appendChild(node);
+                    });*/
+        
+                    /*styles.forEach(style => {
+                        let node = document.createElement("option");
+                        let textnode = document.createTextNode(style.name);
+                        let attr = document.createAttribute("value");
+                        attr.value = style.id;
+                        node.setAttributeNode(attr);
+                        node.appendChild(textnode);
+                        document.getElementById("styles").appendChild(node);
+                    });*/
+        
+                    /*sources.forEach(source => {
+                        let node = document.createElement("option");
+                        let textnode = document.createTextNode(source.name);
+                        let attr = document.createAttribute("value");
+                        attr.value = source.id;
+                        node.setAttributeNode(attr);
+                        node.appendChild(textnode);
+                        document.getElementById("sources").appendChild(node);
+                    });*/
+                    
+                }else {
+                    document.getElementById("service").innerHTML = "ERROR GETTING DATA";
+                }
+            };
+        
+            request.onerror = function() {
+                document.getElementById("service").innerHTML = "AN ERROR OCCURED";
+            };
+        
+            request.send();
+        </script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/points.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+</body>
+</html>
