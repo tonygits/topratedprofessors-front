@@ -254,6 +254,10 @@ img {
     box-shadow: 0 0  5px #000000;
 }
 
+#invalid-login {
+    color: #FF0000;
+}
+
 .custom-form h1 {
     color: #2f2f2f;
     

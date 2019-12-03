@@ -37,27 +37,20 @@
             <div class="full-width p-20 frow">
                 <div class="p-10 frow direction-column row-center mb-50 shadow-dark bg-white">
                     <div class="frow row-center direction-column text-center p-10">
-                        <h1 class="gradient-text"><i class="fa fa-user-secret"></i> Sign In</h1>
+                        <h1 class="gradient-text">Reset Password</h1>
                     </div>
-                    <form  id="form_1" class="frow direction-column custom-form p-10">
-                        <div id="invalid-login" class="frow direction-column"></div>
-                        <div class="frow mb-10">
-                            <label for="email" class="m-0">Email</label>
-                            <input id="email" type="email" required name="email">
-                        </div>
-                        <div class="frow mb-10">
-                            <label for="password" class="m-0">Password</label>
-                            <input id="password" type="password" required name="password">
-                        </div>
-                        <input type="text" hidden id="to_post">
-                        <div class="mb-20"></div>
-                        <div class="frow row-center">
-                            <button id="login-button" type="submit" class="main-btn">LOGIN <i class="ml-5 fa fa-sign-in-alt"></i></button>
-                        </div>
-                        <div class="frow row-center mt-10 contacts">
-                            <a href="reset.html">Reset My Password?</a>
-                        </div>
-                    </form>
+                    <div id="form-container">
+                        <form id="form_3" class="frow direction-column custom-form p-10">
+                            <div class="frow mb-10">
+                                <label for="email" class="m-0">Your Email Address</label>
+                                <input id="email" type="email" required name="PasswordResetRequestForm[email]">
+                            </div>
+                            <div class="mb-20"></div>
+                            <div class="frow row-center">
+                                <button type="submit" class="main-btn">LOGIN <i class="ml-5 fa fa-sign-in-alt"></i></button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -82,7 +75,7 @@
         </section>
 
         <script src="js/jquery.min.js"></script>
-        <script src="js/post-login.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/password-reset.js"></script>
     </body>
 </html>

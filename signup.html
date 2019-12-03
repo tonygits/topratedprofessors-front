@@ -34,28 +34,31 @@
         </nav>
                 </div>
             <div class="full-width p-20 frow">
-                <div class="p-10 frow row-center mb-50 shadow-light bg-white">
+                <div class="p-10 frow row-center direction-column mb-50 shadow-dark bg-white">
                     <div class="frow row-center direction-column text-center p-10">
-                        <h4 class="gradient-text icon-only"><i class="fa fa-users full-width"></i></h4>
+                        <h1 class="gradient-text"><i class="fa fa-users full-"></i> Sign Up</h1>
                     </div>
-                    <form class="frow direction-column custom-form p-10 form-width" action="/api/user-register" method="POST">
+                    <form id="form_2" class="frow direction-column p-10">
+                        <div class="frow mt-30 mb-10">
+                            <label for="username" class="m-0">Username</label>
+                            <input id="username" type="text" required name="username">
+                        </div>
                         <div class="frow mb-10">
                             <label for="email" class="m-0">Email Address</label>
-                            <input type="email" required name="email">
+                            <input id="email" type="email" required name="email">
                         </div>
-                        <div class="frow mt-30 mb-10">
-                            <label for="first_name" class="m-0">First Name</label>
-                            <input type="text" required name="first_name">
-                        </div>
-                        <div class="frow mt-30 mb-10">
-                            <label for="last_name" class="m-0">Last Name</label>
-                            <input type="text" required name="last_name">
-                        </div>
-                        <div class="frow mt-30 mb-10">
+                        <div class="frow mb-5">
                             <label for="password" class="m-0">Password</label>
-                            <input type="password" required name="password">
+                            <input type="password" id="password" required name="password">
                         </div>
-                        <div class="mb-20"></div>
+                        <div class="frow mb-5">
+                            <label for="password" class="m-0">Confirm Password</label>
+                            <input type="password" required id="confirm_password">
+                        </div>
+                        <div class="frow m-0 p-0 direction-column" id="no-match"></div>
+                        <div class="frow m-0 p-0" id="timezone"></div>
+                        <input type="number" hidden name="site_code" value="2">
+                        <div class="mb-20" id="invalid-login"></div>
                         <div class="frow row-center">
                             <button type="submit" class="main-btn">SIGN UP <i class="ml-5 fa fa-users"></i></button>
                         </div>
@@ -88,6 +91,12 @@
             </div>
         </div>
     </section>
+        <script>
+            let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            document.getElementById("timezone").innerHTML = '<input type="text" hidden name="timezone" value="' + timezone + '">';
+        </script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/signup.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
