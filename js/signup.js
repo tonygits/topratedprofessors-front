@@ -41,7 +41,11 @@ $(document).ready(function() {
           if (xhr.status === "101") {
             document.getElementById("invalid-login").innerHTML = '<p class="p-5">' + xhr.message + '</p>';
           }else {
-            window.location.href  = "https://topratedprofessors.com/login.html";
+            document.getElementById("form-replace").innerHTML = 
+            '<div class="frow direction-column items-center"><p class="p-5">' + xhr.message + '</p><p>Redirecting you to login page...</p></div>';
+            setTimeout(function() {
+              window.location.href  = "https://topratedprofessors.com/login.html";
+            }, 1000)
           }
         },
         error: function (xhr, status, err) {
