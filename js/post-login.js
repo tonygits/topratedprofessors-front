@@ -15,7 +15,7 @@ $(document).ready(function() {
     }else if (document.getElementById("email").value.indexOf("@") == "-1") {
       alert("Enter all a valid email address")
     }else {
-      $.ajax("https://doctorateessays.com/api/user-login", {
+      $.ajax("https://admin.topratedprofessors.com/api/user-login", {
         data: jsonObject,
         type: "POST",
         crossdomain: true,
@@ -25,8 +25,8 @@ $(document).ready(function() {
           if (xhr.status === "101") {
             document.getElementById("invalid-login").innerHTML = '<p class="p-5">' + xhr.message + '</p>';
           }else {
-            //console.log("https://doctorateessays.com/site/api-login?email=" + xhr.email + "&token=" + xhr.token);
-            window.location.href  = "https://doctorateessays.com/site/api-login?email=" + xhr.email + "&token=" + xhr.token;
+            //console.log("https://admin.topratedprofessors.com/site/api-login?email=" + xhr.email + "&token=" + xhr.token);
+            window.location.href  = "https://admin.topratedprofessors.com/site/api-login?email=" + xhr.email + "&token=" + xhr.token;
           }
         },
         error: function (xhr, status, err) {
