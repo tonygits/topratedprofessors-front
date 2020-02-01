@@ -31,7 +31,7 @@ $(document).ready(function() {
     }else if (document.getElementById("email").value.indexOf("@") == "-1") {
       alert("Enter all a valid email address")
     }else {
-      $.ajax("https://doctorateessays.com/api/user-register", {
+      $.ajax("https://admin.topratedprofessors.com/api/user-register", {
         data: jsonObject,
         type: "POST",
         crossdomain: true,
